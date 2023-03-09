@@ -1,0 +1,384 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body{
+                overflow-x:hidden;
+            }
+            #header{
+                background-image: url("imgs/header-img.svg");
+                background-repeat:no-repeat;
+                background-size: cover;
+                background-position:center;
+                height:579px;
+                /* mix-blend-mode: darken; */
+                filter:saturate(0.9);
+                filter:blur(0.2);
+                border:0px solid transparent;
+                border-bottom-right-radius:5cm;
+                border-top-right-radius: 5cm;
+            }
+            #header h1,h3{
+                font-family: 'Iceland', cursive;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 128px;
+                line-height: 124px;
+
+                color: #33FF00 ;
+                background-clip: text;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            } 
+            #part-1{
+                background: conic-gradient(from 189.87deg at 50% 50%, rgba(19, 230, 243, 0) -128.42deg, #432DC9 25.5deg, rgba(102, 55, 201, 0.458333) 116.94deg, rgba(19, 230, 243, 0) 231.58deg, #432DC9 385.5deg);
+                padding-top: 186px;
+                padding-bottom:186px;
+                border:0px solid transparent;
+                border-top-right-radius:5cm;
+            }
+            #part-1 img{
+                box-shadow: 0 0 100px #000000;
+                border:0px solid transparent;
+                border-radius: 331px;
+            }
+            #part-1 #desc{
+                display:flex;
+                flex-direction: row;
+                align-items:center;
+                justify-content: space-around;
+                text-align: center;
+                padding:10px;
+            }
+           .heading{
+                color:#231b68;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-weight:700;
+                font-size:1.5cm;
+            }
+            .about{
+                color:#ffffff;
+                font-size:1cm;
+            }
+            #part-1 #what{
+                position:relative;
+                left:0%;
+                padding-right: 10px;
+            }
+            #part-1 #why{
+                position: relative;
+                left:0%;
+                padding-left: 10px;
+            }
+            #part-2{
+                background-image: url("imgs/bg-blogs.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color:#33FF00;
+                height:600px;
+
+            }
+            #part-2 #container{
+                position: relative;
+                left:20%;
+                top:20%;
+                width:60%;
+                height:60%;
+                background-color:rgb(95, 15, 141);
+                border:0px solid transparent;
+                border-radius:20px;
+                overflow:hidden;
+            }
+            #part-2 #container .blog{
+                background-color: rgba(79, 85, 134,0.5);
+                color:#ffffff;
+                width:97%;
+                height:90%;
+            }
+            #part-2 #container #blog1{
+                position:absolute;
+                left:10px;
+                top:10px;
+                animation-name: blog1;
+                animation-duration:25s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes blog1{
+                0%{
+                    left:10px;
+                }
+                15%{
+                    left:2380px;
+                }
+                25%{
+                    left:2380px;
+                }
+                40%{
+                    left:1590px;
+                }
+                50%{
+                    left:1590px;
+                }
+                65%{
+                    left:800px;
+                }
+                75%{
+                    left:800px;
+                }
+                90%{
+                    left:0px;
+                }
+                100%{
+                    left:0px;
+                }
+            }
+            #part-2 #container #blog2{
+                position:absolute;
+                left:800px;
+                top:10px;
+                animation-name: blog2;
+                animation-duration:25s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes blog2{
+                0%{
+                    left:800px;
+                }
+                15%{
+                    left:0px;
+                }
+                25%{
+                    left:0px;
+                }
+                40%{
+                    left:2380px;
+                }
+                50%{
+                    left:2380px;
+                }
+                65%{
+                    left:1590px;
+                }
+                75%{
+                    left:1590px;
+                }
+                90%{
+                    left:800px;
+                }
+                100%{
+                    left:800px;
+                }
+            }
+            #part-2 #container #blog3{
+                position:absolute;
+                left:1590px;
+                top:10px;
+                animation-name: blog3;
+                animation-duration:25s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes blog3{
+                0%{
+                    left:1590px;
+                }
+                15%{
+                    left:800px;
+                }
+                25%{
+                    left:800px;
+                }
+                40%{
+                    left:0px;
+                }
+                50%{
+                    left:0px;
+                }
+                65%{
+                    left:2380px;
+                }
+                75%{
+                    left:2380px;
+                }
+                90%{
+                    left:1590px;
+                }
+                100%{
+                    left:1590px;
+                }
+            }
+            #part-2 #container #blog4{
+                position:absolute;
+                left:2380px;
+                top:10px;
+                animation-name: blog4;
+                animation-duration:25s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes blog4{
+                0%{
+                    left:2380px;
+                }
+                15%{
+                    left:1590px;
+                }
+                25%{
+                    left:1590px;
+                }
+                40%{
+                    left:800px;
+                }
+                50%{
+                    left:800px;
+                }
+                65%{
+                    left:0px;
+                }
+                75%{
+                    left:0px;
+                }
+                90%{
+                    left:2380px;
+                }
+                100%{
+                    left:2380px;
+                }
+            }
+            #part-2 #container .blog .text{
+                position:relative;
+                left:45%;
+                top:45%;
+            }
+            footer{
+                color:#ffffff;
+                background-color:#5e15be;
+            }
+            footer #f-box{
+                display:flex;
+                flex-direction:row;
+                justify-content:space-around;
+                padding-top: 1cm;
+            }
+            footer #f-box a{
+                padding:1cm;
+                text-decoration:none;
+                color:#ffffff;
+            }
+            footer #f-box #p1,#p2,#p3{
+                display:flex;
+                flex-direction:column;
+                justify-content:space-around;
+            }
+            footer #line-1{
+                position:relative;
+                left:25%;
+                width:50%;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+                padding-top:1cm;
+                padding-bottom:1cm;
+            }
+
+            footer #sep1{
+                width:100%;
+                height:2px;
+                background-color:#ffffff;
+            }
+            footer #i-yt{
+                width:0.8cm;
+                height:0.6cm;
+                border:0px solid transparent;
+                border-radius:0.3cm;
+            }
+            footer #i-li{
+                width:0.8cm;
+                height:0.8cm;
+            }
+            @media only screen and (max-width:600px){
+                #header{
+                    border-bottom-right-radius: 2.5cm;
+                    border-top-right-radius: 2.5cm;
+                }
+                #header h1,h3{
+                    font-size:2cm;
+                }
+                #part-1{
+                    border-top-right-radius: 2.5cm;
+                }
+                #part-1 #desc{
+                    display:flex;
+                    flex-direction:column;
+                }
+                footer #f-box{
+                flex-direction:column;
+                align-items:center;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div id="header">
+                <center>
+                    <h1>CROWDUPSS</h1>
+                    <h3>LETS START-UP FOR STARTUPS!!</h3>
+                </center>
+            </div>
+            <div id="part-1">
+                <center>
+                    <img src="imgs/logo.svg">
+                </center>
+                <center>
+                    <div id="desc">
+                            <div id="what">
+                                <h4 class="heading">What is CROWDUPSS?</h4>
+                                <p class="about">About Crowdupss</p>
+                            </div>
+                            <div id="why">
+                                <h4 class="heading">Why is CROWDUPSS?</h4>
+                                <p class="about">Works of Crowdupss</p>
+                            </div>
+                    </div>
+                </center>
+            </div>
+            <div id="part-2">
+                <div id="container">
+                    <div id="blog1" class="blog">
+                        <div class="text">BLOG-1</div>
+                    </div>
+                    <div id="blog2" class="blog">
+                        <div class="text">BLOG-2</div>
+                    </div>
+                    <div id="blog3" class="blog">
+                        <div class="text">BLOG-3</div>
+                    </div>
+                    <div id="blog4" class="blog">
+                        <div class="text">BLOG-4</div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div id="line-1"><div class="logo">CROWDUPSS</div><div id="social-icons"><img src="#" id="i-inst"><img src="imgs/icon-youtube.svg" id="i-yt"><img src="imgs/li.webp" id="i-li"></div></div>
+                <div id="sep1"></div>
+                <div id="f-box">
+                    <div id="p1">
+                        <a href="#">LINK1</a>
+                        <a href="#">LINK2</a>
+                        <a href="#">LINK3</a>
+                    </div>
+                    <div id="p2">
+                        <a href="#">LINK4</a>
+                        <a href="#">LINK5</a>
+                        <a href="#">LINK6</a>
+                    </div>
+                    <div id="p3">
+                        <a href="#">LINK7</a>
+                        <a href="#">LINK8</a>
+                        <a href="#">LINK9</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
